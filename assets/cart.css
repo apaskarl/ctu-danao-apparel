@@ -1,0 +1,260 @@
+/* CART PAGE */
+.section-p1-cart {
+    padding: 40px 135px;
+}
+
+.nav-menu .cart-quantity {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+#cart {
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+}
+
+#cart-header {
+    width: 100%;
+    height: 15vh;
+    padding: 120px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#cart-header h1 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 100px;
+}
+
+#cart table td {
+    text-align: center;
+}
+
+#cart table td:nth-child(1) {
+    width: 75px;
+    text-align: center;
+}
+
+#cart table thead {
+    background-color: white;
+}
+
+#cart table tbody tr {
+    background-color: white;
+    /* border-top: #f0f0f0 15px solid; */
+    border-top: 1px solid #dbdbdb;
+}
+
+#cart table thead td {
+    /* font-weight: 550;
+    font-size: 18px; */
+    font-weight: 500;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    /* font-size: 16px;
+    font-weight: 500; */
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+#cart table tbody tr:last-child {
+    background: transparent;
+}
+
+#cart table tbody td {
+    font-size: 15px;
+}
+
+#cart table tbody ion-icon {
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+#cart table input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+}
+
+#cart table tbody tr td.cartIsEmpty {
+    padding: 60px 0;
+    font-size: 18px;
+    border: 1px solid #f0f0f0;
+}
+
+#cart table tbody tr td.checkout-btn {
+    background-color: #222;
+    text-align: center;
+}
+
+#cart table tbody tr td.checkout-btn a {
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+}
+
+#cart table tbody tr td .qty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ORDER TABLE */
+#order table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#order table img {
+    width: 70px;
+}
+
+#order table td:nth-child(1) {
+    width: 75px;
+    text-align: center;
+}
+
+#order table td:nth-child(2) {
+    width: 100px;
+    text-align: center;
+}
+
+#order table td:nth-child(3) {
+    width: 50px;
+    text-align: start;
+}
+
+#order table td:nth-child(4),
+#order table td:nth-child(5) {
+    width: 100px;
+    text-align: center;
+}
+
+#order table td:nth-child(7),
+#order table td:nth-child(8),
+#order table td:nth-child(9) {
+    width: 120px;
+    text-align: center;
+}
+
+#order table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#order table thead {
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    border-right: none;
+}
+
+#order table thead td {
+    font-weight: 700;
+    padding: 18px 0;
+}
+
+#order table tbody tr td {
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+#order table tbody tr:nth-last-child(3) td {
+    padding-bottom: 15px;
+}
+
+#order table tbody tr:nth-last-child(2) td {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+#order table tbody td {
+    font-size: 15px;
+}
+
+#order table tbody ion-icon {
+    font-size: 18px;
+    color: rgb(51, 51, 218);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+#order table tbody ion-icon:hover {
+    background-color: rgb(211, 211, 219);
+}
+
+#order table tbody .basketTotalText {
+    font-weight: bold;
+}
+
+#order table tbody .cartIsEmpty {
+    padding: 50px 0;
+    font-size: 20px;
+}
+.select-all {
+    cursor: pointer;
+    color: rgb(55, 89, 182);
+}
+
+#cart table tr td:nth-child(3) {
+    width: 250px;
+}
+
+/* #cart table tr td:nth-child(8) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+} */
+
+#cart table tr td:nth-child(8) ion-icon {
+    border: 1px solid #dbdbdb;
+    border-radius: 0px;
+}
+
+#cart table tr td:nth-child(8) ion-icon:hover {
+    background-color: black;
+    color: white;
+}

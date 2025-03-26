@@ -1,0 +1,76 @@
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    text-align: center;
+}
+
+table img {
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+table thead {
+    background: #f0f0f0;
+}
+
+table thead td {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 13px 0;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+}
+
+table tbody tr td {
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    /* border-bottom: none; */
+}
+
+/* DATA BORDERS */
+
+table tbody td {
+    font-size: 15px;
+}
+
+table tr td:first-child {
+    border-left: none;
+}
+
+table tr td:last-child {
+    border-right: none;
+}
+
+table tbody ion-icon {
+    font-size: 20px;
+    color: #111;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+table tbody ion-icon:hover {
+    opacity: 0.5;
+}
+
+table tbody ion-icon:active {
+    background-color: rgb(175, 175, 187);
+}
+
+table tbody button {
+    cursor: pointer;
+    padding: 8px 0;
+    margin: 8px 0;
+    width: 45%;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+table tbody button:hover {
+    opacity: 0.6;
+}

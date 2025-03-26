@@ -1,0 +1,388 @@
+/* SINGLE PRODUCT PAGE */
+#prod-details {
+    display: flex;
+    padding: 90px 90px 60px 90px;
+    justify-content: center;
+}
+
+#prod-details .single-prod-img {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.small-img-group {
+    flex-shrink: 0;
+    width: 25%;
+    max-width: 110px;
+}
+
+.small-img-group-mobile {
+    display: none;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.small-img-col-mobile {
+    height: 100px;
+    min-width: 100px;
+    line-height: 100px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.small-img-col-mobile:last-child {
+    margin-right: 0;
+}
+
+.small-img-group-mobile::-webkit-scrollbar {
+    width: 0px;
+}
+
+.small-img-group-mobile::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.small-img-group-mobile::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+.small-img-col {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.small-img {
+    width: 100%;
+    height: auto;
+}
+
+#main-img {
+    width: 80%;
+    max-width: none;
+    margin-left: 10px;
+}
+
+.small-img:hover {
+    opacity: 0.8;
+}
+
+.small-img.selected {
+    border: 2px solid black;
+}
+
+#prod-details .single-prod-details {
+    width: 30%;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#prod-details .single-prod-details hr {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+#prod-details .single-prod-details h2 {
+    color: black;
+    margin: 10px 0;
+    font-size: 33px;
+}
+
+#prod-details .single-prod-details h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#prod-details .single-prod-details h5 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+#prod-details .single-prod-details h5.stock {
+    margin-bottom: 20px;
+}
+
+#prod-details .single-prod-details p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+#prod-details .single-prod-details .prod-option {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Add to Cart Button */
+
+#prod-details .single-prod-details a {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .1s;
+    align-self: start;
+}
+
+#prod-details .single-prod-details a.add-wishlist {
+    margin-bottom: 20px;
+}
+
+#prod-details .single-prod-details a span {
+    position: relative;
+    z-index: 2;
+}
+
+#prod-details .single-prod-details a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* background: #DA9637ff; */
+    background: #111;
+    transition: all .35s;
+}
+
+#prod-details .single-prod-details a:hover {
+    color: #fff;
+}
+
+#prod-details .single-prod-details a:hover:after {
+    width: 100%;
+}
+
+/* PRODUCT OPTIONS BUTTONS */
+
+.size-btn,
+.color-btn {
+    padding: 10px 20px;
+    margin: 5px 5px 5px 0;
+    border: 2px solid #eeeeee;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-btn.selected,
+.color-btn.selected {
+    border: 2px solid black;
+}
+
+/* QUANTITY INPUT */
+
+.qty-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 125px;
+    margin: 20px 0 10px 0;
+    background: white;
+    border: 2px solid #f0f0f0;
+}
+
+.qty-wrapper button.qty-btn {
+    padding: 10px 15px;
+    margin: 10px 0;
+    /* border: 2px solid #f0f0f0; */
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qty-wrapper button.qty-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.qty-wrapper span {
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qty-wrapper input {
+    width: 50%;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color:black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+.failed-message {
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color:black;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    z-index: 998;
+}
+
+/* TOAST MESSAGE */
+.toast {
+    width: 25%;
+    position: fixed;
+    z-index: 1000;
+    top: 8%;
+    right: 30px;
+    border-radius: 10px;
+    background: white;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+    transform: translateX(0%);
+}
+
+.toast .toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    color: white;
+    border-radius: 50px;
+}
+
+.check.info {
+    background-color: yellow;
+}
+
+.check.success {
+    background-color: green;
+}
+
+.check.failed {
+    background-color: red;
+}
+
+.toast-content .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.message .text {
+    font-weight: 400;
+    color: #222;
+}
+
+.message .text.text-1 {
+    font-weight: 600;
+    color: black;
+}
+
+.message .text.text-2 {
+    font-size: 15px;
+}
+
+.toast .close {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toast .close:hover {
+    opacity: 1;
+}
+
+.toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+
+.toast .progress::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.toast .progress.failed::before {
+    background-color: red;
+}
+
+.toast .progress.success::before {
+    background-color: green;
+}
+
+.progress.active:before {
+    animation: progress 2s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        right: 100%;
+    }
+}

@@ -1,0 +1,257 @@
+/* SHOP PAGE */
+
+body {
+    position: relative;
+}
+
+#products {
+    text-align: center;
+    padding: 50px 100px;
+}
+
+#products p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 50px 0 30px 0;
+}
+
+.filter-wrap {
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.2s ease;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.filter-wrap.active {
+    width: 30%;
+    left: 0;
+}
+
+.filter-wrap-content {
+    padding: 40px;
+    z-index: 1000;
+}
+
+.filter-wrap h2 {
+    display: flex;
+    justify-content: left;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 6;
+}
+
+.overlay.active {
+    display: block;
+}
+
+#products .filter {
+    position: sticky;
+    top: 10vh;
+    z-index: 4;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#products .filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 10px 25px;
+    margin: 5px 0;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#products .filter-btn:hover {
+    opacity: 0.5;
+}
+
+#products .filter-btn ion-icon {
+    margin-right: 7px;
+}
+
+#products .sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    padding: 10px 25px;
+    margin: 5px 0;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prod-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.product-link {
+    text-decoration: none;
+    color: black;
+}
+
+.prod {
+    width: 300px;
+    height: 400px;
+    padding: 0;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    margin: 15px 10px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.prod:hover a {
+    color: white;
+}
+
+.prod:hover img {
+    opacity: 0.8;
+}
+
+.prod img {
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+}
+
+.prod .wishlist {
+    position: absolute;
+    font-size: 22px;
+    color: #616161;
+    top: 12px;
+    right: 8px;
+    z-index: 1;
+}
+
+.prod .wishlist:hover {
+    color: rgb(240, 83, 83);
+}
+
+.prod .prod-desc {
+    background: transparent;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.prod .prod-desc .prod-name {
+    color: #222;
+    text-decoration: none;
+    padding-top: 7px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.prod .prod-desc .prod-price {
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* .prod:hover .prod-desc .prod-name {
+    display: none;
+    text-align: center;
+}
+
+.prod:hover .prod-desc .prod-price {
+    display: none;
+}
+
+.prod:hover .prod-desc::after {
+    color: black;
+    content: "+ Add to cart";
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateY(50%);
+    text-align: center;
+} */
+
+.filter-wrap h2 {
+    font-size: 25px;
+}
+
+.filter-wrap #buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.filter-wrap label {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.filter-wrap label:hover span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.filter-wrap label span {
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 100ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: black;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}

@@ -1,0 +1,229 @@
+/* .container {
+    height: 100vh;
+    scroll-behavior: smooth;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#logo-header {
+    font-size: 24px;
+    color: #DA9637ff;
+}
+
+#admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background-color: #222;
+    height: 9vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ion-icon {
+    font-size: 35px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    transition: 0.2s ease;
+}
+
+#navbar li a span {
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    padding: 5px;
+    background-color: rgb(236, 166, 69);
+    bottom: -2px;
+    left: 40px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #DA9637ff;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #DA9637ff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.3s ease;
+}
+
+.add-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.add {
+    font-size: 18px;
+    width: 10%;
+    color: rgb(51, 51, 218);
+    text-decoration: none;
+    margin: 10px 0 5px 0;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.add:hover {
+    color: rgb(153, 153, 182);
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    text-align: center;
+}
+
+table img {
+    width: 60px;
+}
+
+td:nth-child(1) {width: 10%;}
+td:nth-child(2) {border-left: 1px solid #dbdbdb; width: 10%;}
+td:nth-child(3) {width: 10%;}
+td:nth-child(4) {border-left: 1px solid #dbdbdb; width: 10%;}
+td:nth-child(5) {width: 10%;}
+td:nth-child(6) {border-left: 1px solid #dbdbdb; width: 10%;}
+td:nth-child(7) {width: 10%;}
+td:nth-child(8) {border-left: 1px solid #dbdbdb; width: 10%;}
+td:nth-child(9) {width: 5%;}
+
+table thead {
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    border-right: none;
+}
+
+table thead td {
+    font-weight: 700;
+    padding: 18px 0;
+}
+
+table tbody tr td {
+    padding-top: 15px;
+}
+
+table tbody tr:last-child td {
+    padding-bottom: 15px;
+}
+
+table tbody tr:last-child {
+    border-bottom: 1px solid #dbdbdb;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+table tbody td {
+    font-size: 15px;
+}
+
+table tbody ion-icon {
+    font-size: 25px;
+    color: rgb(51, 51, 218);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+table tbody ion-icon:hover {
+    color: rgb(153, 153, 182);
+}
+
+table tbody ion-icon:active {
+    background-color: rgb(175, 175, 187);
+}
+
+.prod-details {
+    font-size: 20px;
+    text-align: center;
+}
+
+.confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    z-index: 999;
+    letter-spacing: 0;
+}
+
+.confirmation-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.confirmation-buttons button {
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.confirmation-buttons button:hover {
+    opacity: 0.5;
+} */
+
+table input {
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+}
+
